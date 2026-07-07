@@ -1,7 +1,7 @@
 {
     "name": "@rafsaw/rafsaw-ai-toolkit",
     "version": "0.1.0",
-    "description": "Shared AI toolkit for projects: skills, prompts, rules and eval starters.",
+    "description": "Shared AI toolkit: skills, prompts, rules and eval starters.",
     "private": false,
     "type": "module",
     "files": [
@@ -26,7 +26,6 @@
     },
     "keywords": [
       "ai-toolkit",
-      "rafsaw",
       "claude-code",
       "promptfoo",
       "code-review"
