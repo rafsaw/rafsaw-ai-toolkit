@@ -1,0 +1,36 @@
+{
+    "name": "@rafsaw/rafsaw-ai-toolkit",
+    "version": "0.1.0",
+    "description": "Shared AI toolkit for projects: skills, prompts, rules and eval starters.",
+    "private": false,
+    "type": "module",
+    "files": [
+      "skills",
+      "prompts",
+      "rules",
+      "evals",
+      "install.js",
+      "uninstall.js",
+      "README.md"
+    ],
+    "scripts": {
+      "install:toolkit": "node install.js",
+      "uninstall:toolkit": "node uninstall.js"
+    },
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/rafsaw/rafsaw-ai-toolkit.git"
+    },
+    "keywords": [
+      "ai-toolkit",
+      "rafsaw",
+      "claude-code",
+      "promptfoo",
+      "code-review"
+    ],
+    "author": "Rafal Sawicki",
+    "license": "MIT"
+  }
