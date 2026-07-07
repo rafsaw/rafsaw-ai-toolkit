@@ -1,35 +1,35 @@
 {
     "name": "@rafsaw/rafsaw-ai-toolkit",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Shared AI toolkit: skills, prompts, rules and eval starters.",
     "private": false,
     "type": "module",
     "files": [
-      "skills",
-      "prompts",
-      "rules",
-      "evals",
-      "install.js",
-      "uninstall.js",
-      "README.md"
+        "skills",
+        "prompts",
+        "rules",
+        "evals",
+        "install.js",
+        "uninstall.js",
+        "README.md"
     ],
     "scripts": {
-      "install:toolkit": "node install.js",
-      "uninstall:toolkit": "node uninstall.js"
+        "install:toolkit": "node install.js",
+        "uninstall:toolkit": "node uninstall.js"
     },
     "publishConfig": {
-      "registry": "https://npm.pkg.github.com"
+        "registry": "https://npm.pkg.github.com"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/rafsaw/rafsaw-ai-toolkit.git"
+        "type": "git",
+        "url": "git+https://github.com/rafsaw/rafsaw-ai-toolkit.git"
     },
     "keywords": [
-      "ai-toolkit",
-      "claude-code",
-      "promptfoo",
-      "code-review"
+        "ai-toolkit",
+        "claude-code",
+        "promptfoo",
+        "code-review"
     ],
     "author": "Rafal Sawicki",
     "license": "MIT"
-  }
+}
