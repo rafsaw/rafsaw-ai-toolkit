@@ -1,7 +1,7 @@
 description: Shared starter evals for AI code review prompts
 
 prompts:
-  - ../prompts/code-review.md
+  - ../prompts/rafsaw-code-review.md
 
 providers:
   - id: openai:gpt-4.1-mini
