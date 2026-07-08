@@ -1,10 +1,12 @@
 {
     "name": "@rafsaw/rafsaw-ai-toolkit",
-    "version": "0.1.1",
+    "version": "0.1.3",
     "description": "Shared AI toolkit: skills, prompts, rules and eval starters.",
     "private": false,
     "type": "module",
     "files": [
+        "bin",
+        "docs",
         "skills",
         "prompts",
         "rules",
@@ -14,8 +16,9 @@
         "README.md"
     ],
     "scripts": {
-        "install:toolkit": "node install.js",
-        "uninstall:toolkit": "node uninstall.js"
+        "install:toolkit": "node bin/rafsaw-ai-toolkit.js install",
+        "uninstall:toolkit": "node bin/rafsaw-ai-toolkit.js uninstall",
+        "status:toolkit": "node bin/rafsaw-ai-toolkit.js status"
     },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
@@ -23,6 +26,9 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/rafsaw/rafsaw-ai-toolkit.git"
+    },
+    "bin": {
+        "rafsaw-ai-toolkit": "./bin/rafsaw-ai-toolkit.js"
     },
     "keywords": [
         "ai-toolkit",
