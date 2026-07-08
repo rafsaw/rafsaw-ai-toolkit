@@ -1,6 +1,6 @@
 {
     "name": "@rafsaw/rafsaw-ai-toolkit",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "Shared AI toolkit: skills, prompts, rules and eval starters.",
     "private": false,
     "type": "module",
