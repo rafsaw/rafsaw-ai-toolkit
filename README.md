@@ -67,8 +67,8 @@ npx rafsaw-ai-toolkit uninstall
 The installer copies shared artifacts into the consumer project:
 
 ```text
-.claude/skills/code-review/SKILL.md
-.claude/prompts/code-review.md
+.claude/skills/rafsaw-code-review/SKILL.md
+.claude/prompts/rafsaw-code-review.md
 evals/rafsaw-ai-toolkit.promptfooconfig.yaml
 CLAUDE.md
 .claude/.rafsaw-ai-toolkit-manifest.json

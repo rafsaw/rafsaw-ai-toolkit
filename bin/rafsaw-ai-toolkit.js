@@ -96,23 +96,23 @@ function removeSentinelBlock(existing) {
 function install() {
   const installedFiles = [];
 
-  const skillSource = path.join(packageRoot, "skills", "code-review", "SKILL.md");
+  const skillSource = path.join(packageRoot, "skills", "rafsaw-code-review", "SKILL.md");
   const skillTarget = path.join(
     projectRoot,
     ".claude",
     "skills",
-    "code-review",
+    "rafsaw-code-review",
     "SKILL.md",
   );
   copyFile(skillSource, skillTarget);
   installedFiles.push(path.relative(projectRoot, skillTarget));
 
-  const promptSource = path.join(packageRoot, "prompts", "code-review.md");
+  const promptSource = path.join(packageRoot, "prompts", "rafsaw-code-review.md");
   const promptTarget = path.join(
     projectRoot,
     ".claude",
     "prompts",
-    "code-review.md",
+    "rafsaw-code-review.md",
   );
   copyFile(promptSource, promptTarget);
   installedFiles.push(path.relative(projectRoot, promptTarget));
@@ -125,8 +125,8 @@ function install() {
   );
 
   const evalContent = readText(evalSource).replace(
-    "../prompts/code-review.md",
-    "../.claude/prompts/code-review.md",
+    "../prompts/rafsaw-code-review.md",
+    "../.claude/prompts/rafsaw-code-review.md",
   );
 
   writeText(evalTarget, evalContent);
