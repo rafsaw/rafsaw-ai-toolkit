@@ -1,5 +1,6 @@
 # 10xDevs course content pulled by `10x sync` (reproducible, not package source)
 .claude/
+lessons/
 
 # Node
 node_modules/
