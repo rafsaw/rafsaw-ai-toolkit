@@ -1,7 +1,7 @@
 ---
 change_id: version-cmd
 title: Add a version command to the installer CLI
-status: implementing
+status: implemented
 created: 2026-07-10
 updated: 2026-07-10
 archived_at: null

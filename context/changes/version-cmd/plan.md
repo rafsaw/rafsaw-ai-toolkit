@@ -105,8 +105,8 @@ c
 
 #### Automated
 
-- [x] 1.1 Test suite passes: `npm test`
-- [x] 1.2 Version command prints the package version: `node bin/rafsaw-ai-toolkit.js version` outputs the `version` field from `package.json`
+- [x] 1.1 Test suite passes: `npm test` — df64ca5
+- [x] 1.2 Version command prints the package version: `node bin/rafsaw-ai-toolkit.js version` outputs the `version` field from `package.json` — df64ca5
 
 #### Manual
 
