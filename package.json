@@ -16,6 +16,7 @@
         "README.md"
     ],
     "scripts": {
+        "test": "node --test",
         "install:toolkit": "node bin/rafsaw-ai-toolkit.js install",
         "uninstall:toolkit": "node bin/rafsaw-ai-toolkit.js uninstall",
         "status:toolkit": "node bin/rafsaw-ai-toolkit.js status"
