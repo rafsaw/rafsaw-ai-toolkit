@@ -14,7 +14,7 @@ This package contains:
 
 ```text
 @rafsaw/rafsaw-ai-toolkit
-````
+```
 
 Published to GitHub Packages:
 
@@ -38,9 +38,7 @@ npm install --save-dev @rafsaw/rafsaw-ai-toolkit
 
 Full installation and authentication guide:
 
-```text
-docs/consumer-installation.md
-```
+[docs/github-packages-ai-toolkit-installation.md](docs/github-packages-ai-toolkit-installation.md)
 
 ## Usage in a consumer project
 
@@ -93,22 +91,3 @@ source repo → GitHub Actions → GitHub Packages → consumer repo
 ```
 
 The goal is to treat AI artifacts as code: versioned, reviewed, published and consumed through a controlled distribution path.
-
-````
-
-## Potem wróć do toola
-
-Po dodaniu `bin/rafsaw-ai-toolkit.js` i zmianie `package.json`, commit będzie taki:
-
-```powershell
-git status
-git add package.json README.md bin\rafsaw-ai-toolkit.js
-git commit -m "feat: add AI toolkit installer CLI"
-````
-
-Jeśli wcześniej dodałeś też docs update, możesz mieć osobny commit docs, np.:
-
-```powershell
-git add docs\consumer-installation.md
-git commit -m "docs: document GitHub and Cloudflare package auth"
-```
