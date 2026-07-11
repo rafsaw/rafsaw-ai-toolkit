@@ -25,10 +25,30 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: "@rafsaw"
 
+      - name: Check whether this version is already published
+        id: check
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          if npm view "@rafsaw/rafsaw-ai-toolkit@$VERSION" version > /dev/null 2>&1; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Skip publish (version unchanged)
+        if: steps.check.outputs.published == 'true'
+        run: |
+          echo "::notice::Version ${{ steps.check.outputs.version }} is already published. Nothing to do. Run 'npm version patch' to release a new one."
+
       - name: Install dependencies
+        if: steps.check.outputs.published == 'false'
         run: npm install --ignore-scripts
 
       - name: Publish package
+        if: steps.check.outputs.published == 'false'
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
