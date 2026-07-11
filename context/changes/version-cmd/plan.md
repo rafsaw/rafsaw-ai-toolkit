@@ -110,4 +110,4 @@ c
 
 #### Manual
 
-- [ ] 1.3 `node bin/rafsaw-ai-toolkit.js help` lists the new `version` command
+- [x] 1.3 `node bin/rafsaw-ai-toolkit.js help` lists the new `version` command
