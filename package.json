@@ -1,6 +1,6 @@
 {
     "name": "@rafsaw/rafsaw-ai-toolkit",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": "Shared AI toolkit: skills, prompts, rules and eval starters.",
     "private": false,
     "type": "module",
@@ -16,6 +16,7 @@
         "README.md"
     ],
     "scripts": {
+        "test": "node --test",
         "install:toolkit": "node bin/rafsaw-ai-toolkit.js install",
         "uninstall:toolkit": "node bin/rafsaw-ai-toolkit.js uninstall",
         "status:toolkit": "node bin/rafsaw-ai-toolkit.js status"

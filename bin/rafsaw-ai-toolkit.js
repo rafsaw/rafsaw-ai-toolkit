@@ -217,11 +217,13 @@ Usage:
   rafsaw-ai-toolkit install
   rafsaw-ai-toolkit status
   rafsaw-ai-toolkit uninstall
+  rafsaw-ai-toolkit version
 
 Commands:
   install    Copy shared AI artifacts into the current project
   status     Show installed toolkit version and managed files
   uninstall  Remove files previously installed by the toolkit
+  version    Print the installed toolkit version
 `);
 }
 
@@ -237,6 +239,9 @@ try {
       break;
     case "status":
       status();
+      break;
+    case "version":
+      console.log(getPackageVersion());
       break;
     case "help":
     default:
