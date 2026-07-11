@@ -25,6 +25,12 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: "@rafsaw"
 
+      - name: Install dependencies
+        run: npm install --ignore-scripts
+
+      - name: Run tests
+        run: npm test
+
       - name: Check whether this version is already published
         id: check
         run: |
@@ -42,10 +48,6 @@ jobs:
         if: steps.check.outputs.published == 'true'
         run: |
           echo "::notice::Version ${{ steps.check.outputs.version }} is already published. Nothing to do. Run 'npm version patch' to release a new one."
-
-      - name: Install dependencies
-        if: steps.check.outputs.published == 'false'
-        run: npm install --ignore-scripts
 
       - name: Publish package
         if: steps.check.outputs.published == 'false'
